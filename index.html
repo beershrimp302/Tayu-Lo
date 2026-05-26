@@ -53,6 +53,10 @@
         <!-- 与访问者打招呼的文字 -->
         <div class="greeting">你好！很高兴你能通过 NFC 找到这里。</div>
         
+        <div class="singer-box">
+            < img src="singer1.jpg" alt="歌手照片" class="singer-img">
+        </div>
+
         <p>点击下方播放按钮播放音频</p>
 
         <!-- 第一个播放器 -->
@@ -75,7 +79,70 @@
             <source src="haishanghua.mp3" type="audio/mpeg">
             你的浏览器不支持音频播放功能。
         </audio>
+
+         <!-- 第四个播放器 -->
+         <p>火车</p>
+         <audio controls>
+             <source src="huoche.mp3" type="audio/mpeg">
+             你的浏览器不支持音频播放功能。
+         </audio>
+
+         <!-- 第五个播放器 -->
+         <p>未来的主人翁</p>
+         <audio controls>
+             <source src="weilaidezhurenweng.mp3" type="audio/mpeg">
+             你的浏览器不支持音频播放功能。
+         </audio>
+
+         <!-- 第六个播放器 -->
+         <p>叮咛</p>
+         <audio controls>
+             <source src="dingning.mp3" type="audio/mpeg">
+             你的浏览器不支持音频播放功能。
+         </audio>
+
+         <!-- 第七个播放器 -->
+         <p>亡命之徒</p>
+         <audio controls>
+             <source src="wangmingzhitu.mp3" type="audio/mpeg">
+             你的浏览器不支持音频播放功能。
+         </audio>
+
+         <!-- 第八个播放器 -->
+         <p>闪亮的日子</p>
+         <audio controls>
+             <source src="shanliangderizi.mp3" type="audio/mpeg">
+             你的浏览器不支持音频播放功能。
+         </audio>
+
+         <!-- 第九个播放器 -->
+         <p>错误</p>
+         <audio controls>
+             <source src="cuowu.mp3" type="audio/mpeg">
+             你的浏览器不支持音频播放功能。
+         </audio>
+
+         <!-- 第十个播放器 -->
+         <p>北西南风</p>
+         <audio controls>
+             <source src="beixinanfeng.mp3" type="audio/mpeg">
+             你的浏览器不支持音频播放功能。
+         </audio>
+         <div class="footer">小虾制作 · 2026年</div>
     </div>
+
+    <script>
+        const audios = document.querySelectorAll('audio');
+        audios.forEach(audio => {
+            audio.addEventListener('play', () => {
+                audios.forEach(otherAudio => {
+                    if (otherAudio !== audio) {
+                        otherAudio.pause();
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
