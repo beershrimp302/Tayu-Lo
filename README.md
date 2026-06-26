@@ -1,2 +1,2 @@
-# Tayu-Lo
+# Tayou-Lo
 A Music Library Built for U, From X
