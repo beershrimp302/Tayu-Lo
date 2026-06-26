@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>同恩的歌</title>
+    <title>罗大佑的歌</title>
     <style>
         :root {
             --bg-gradient: linear-gradient(135deg, #1e1e2f, #0f0f1a);
@@ -194,7 +194,7 @@
 
         <div class="track-info">
             <div class="cover-art" id="cover-art">
-                <img src="./cover.jpg" alt="歌曲封面">
+                <img src="./singer1.jpg" alt="歌曲封面">
             </div>
             <div class="title" id="track-title">之乎者也</div>
             <div class="artist" id="track-artist">罗大佑</div>
